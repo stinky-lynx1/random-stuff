@@ -7,7 +7,7 @@
 4. End up with the randomest number ever!
 
 ## 2. Creator(s)
-Yes, I did in fact do it, BUT! without @tjf1dev it would never be possible!
+Yes, I ([Stinky](https://github.com/stinky-lynx1)) did in fact do it, BUT! without [tjf1dev](https://github.com/tjf1dev) it would never be possible!
 
 ## 3. Plans
 Since this is really a deadend project, I'm thinking of a better way to show it tho, maybe a HTML or CSS?? idk.
