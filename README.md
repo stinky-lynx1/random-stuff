@@ -1,13 +1,9 @@
-# A simple RNG written by me in Python 3.13!
+# Collection of random stuff i made when bored :3
 
-## 1. How to use
-1. Open it using your py editor or terminal/console, in case you have py installed
-2. Initiate the script!
-3. Follow the guidelines and...
-4. End up with the randomest number ever!
+## A simple RNG written by me in Python 3.13!
 
-## 2. Creator(s)
-Yes, I ([Stinky](https://github.com/stinky-lynx1)) did in fact do it, BUT! without [tjf1dev](https://github.com/tjf1dev) it would never be possible!
+## An integral calculator you can insert python compatible functions into! (yes, even math.sin(x) ;3)
 
-## 3. Plans
-Since this is really a deadend project, I'm thinking of a better way to show it tho, maybe a HTML or CSS?? idk.
+thats it for now x3
+
+enjoy :3
