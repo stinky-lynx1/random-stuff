@@ -1,6 +1,6 @@
 import math # just in case 
 
-a, b, dx, i, r, func= float(input("Upper bound a=")), float(input("Lower bound b=")), float(input("Variable dx=")), 0, int(input("Digits after decimal point n=")), input("f(x)=")
+a, b, dx, i, r, func = float(input("Upper bound a=")), float(input("Lower bound b=")), float(input("Variable dx=")), 0, int(input("Digits after decimal point n=")), input("f(x)=")
 
 x1 = b
 while x1 <= a:
