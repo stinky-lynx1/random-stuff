@@ -2,7 +2,7 @@
 
 ## A simple RNG written by me in Python 3.13!
 
-## An integral calculator you can insert python compatible functions into! (yes, even math.sin(x) ;3)
+## An integral calculator you can insert python compatible functions into! (yes, even sin(x)^2 ;3)
 
 thats it for now x3
 
