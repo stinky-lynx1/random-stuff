@@ -7,29 +7,24 @@
 
 using namespace std;
 
-	auto calc = [](double x)
-	{
-    	return pow(x, 2);           // <- INSERT YOUR FUNCTION IN THIS LINE
-	};
-
 int main()
 {
-	double x2;
-	double x1;
-	double dx;
-    double y;
-    double i;
-
-    cout << "High a="; cin >> x2;
-    cout << endl << "Low b="; cin >> x1;
-    cout << endl << "Variable dx="; cin >> dx;
-    
-    while (x1 < x2)
+    double x2, x, dx, y, i;
+    do {
+        cout << "High a: ";
+        cin >> x2;
+        cout << "Low b: ";
+        cin >> x;
+        cout << "Variable dx: ";
+        cin >> dx;
+    } while (x >= x2);
+    while (x < x2)
     {
-        y = calc(x1);
+        y = pow(x, 2); // <-------------- function goes here (hewp)
         i += y * dx;
-        x1 += dx;
+        x += dx;
     }
 
-    cout << "Integral is " << i << endl;
+    cout << "Integral is " << i << endl << "boop :3" << endl;
+    return 0;
 }
