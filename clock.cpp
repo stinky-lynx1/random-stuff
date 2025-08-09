@@ -2,34 +2,35 @@
 #include <ctime>
 #include <unistd.h>
 
-using namespace std;
-
 int main() {
-	int h = 0, m = 0, s = 0;
+	int h = 0, m = 0, s = 0, prevS = -1;
     const int div = 60;
-    string a = "", b = "", c = "", time;
-	clock_t start = clock(), sec;
+    std::string a = "", b = "", c = "", time;
+	time_t start = ::time(nullptr), now;
 
 	while (true){
-		sec = clock() - start;
-        int prevS = s;
-		s = sec / CLOCKS_PER_SEC;
-//        usleep(50000);
-		if (s % div == 0 && s != 0){
+        prevS = s;
+		s = ::time(nullptr) - start;
+        usleep(50000);
+		if (s >= div){
 			s = 0;
 			m++;
-			if (m % div == 0 && m != 0){
+			if (m >= div){
 				m = 0;
 				h++;
 			}
-            start = clock();
+            start = ::time(nullptr);
 		}
         if (prevS != s){
             a = (h < 10) ? "0" : "", b = (m < 10) ? ":0" : ":", c = (s < 10) ? ":0" : ":";
-            string sh = to_string(h), sm = to_string(m), ss = to_string(s);
+            std::string sh = std::to_string(h), sm = std::to_string(m), ss = std::to_string(s);
             time = a + sh + b + sm + c + ss;
-            cout << "\r" << time;
-            cout.flush();
+            std::cout << "\r" << time;
+            std::cout.flush();
         }
+        if (h == 23 && m == 59 && s == 59) {
+            std::cout << " (stopped)\nTime limit reached!";
+            return 0;
+		}
 	}
 }
