@@ -1,5 +1,4 @@
 from math import *  # for user-implemented functions
-from threading import *  # threading gon kill me istg
 from time import *  # for timer
 
 a, x1, dx, r, func = (
